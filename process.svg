@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".3"/>
+    </pattern>
+    <g id="box">
+      <polygon points="0,0 250,0 250,170 228,192 0,192" fill="#0d0d16" stroke="#fcee0a" stroke-width="2"/>
+      <polygon points="0,0 70,0 60,16 0,16" fill="#fcee0a"/>
+    </g>
+  </defs>
+  <style>
+    .t{font-family:'Arial Black','Segoe UI Black',Impact,sans-serif;font-weight:900;letter-spacing:2px}
+    .m{font-family:Consolas,'Courier New',monospace;font-weight:700}
+    .flow{stroke-dasharray:6 10;animation:fl .8s infinite linear}
+    @keyframes fl{to{stroke-dashoffset:-16}}
+    .s1,.s2,.s3,.s4{animation:hl 6s infinite}
+    .s2{animation-delay:1.5s}.s3{animation-delay:3s}.s4{animation-delay:4.5s}
+    @keyframes hl{0%,24%,100%{opacity:0}2%,20%{opacity:1}}
+  </style>
+
+  <rect width="1200" height="300" fill="#07070c"/>
+  <text x="24" y="34" class="m" font-size="15" fill="#00f0ff">// PROTOCOLO DE ENTREGA</text>
+  <text x="1176" y="34" class="m" font-size="13" fill="#8a8aa0" text-anchor="end">PIPELINE.EXEC ▸ 4 ETAPAS</text>
+  <line x1="24" y1="46" x2="1176" y2="46" stroke="#00f0ff" stroke-opacity=".25"/>
+
+  <!-- connectors -->
+  <g stroke="#00f0ff" stroke-width="3" fill="none">
+    <path class="flow" d="M274 160H318"/>
+    <path class="flow" d="M574 160H618"/>
+    <path class="flow" d="M874 160H918"/>
+  </g>
+  <g fill="#00f0ff">
+    <polygon points="318,152 330,160 318,168"/>
+    <polygon points="618,152 630,160 618,168"/>
+    <polygon points="918,152 930,160 918,168"/>
+  </g>
+
+  <!-- 01 -->
+  <g transform="translate(24 66)">
+    <use href="#box"/>
+    <polygon class="s1" points="0,0 250,0 250,170 228,192 0,192" fill="#fcee0a" opacity="0" style="mix-blend-mode:normal" fill-opacity=".08"/>
+    <text x="8" y="12" class="m" font-size="11" fill="#07070c">ETAPA 01</text>
+    <text x="18" y="62" class="t" font-size="26" fill="#fcee0a">ENTREGA</text>
+    <text x="18" y="100" class="m" font-size="14" fill="#e8e8f0">Dev abre um Pull</text>
+    <text x="18" y="120" class="m" font-size="14" fill="#e8e8f0">Request no repo</text>
+    <text x="18" y="140" class="m" font-size="14" fill="#e8e8f0">de QA</text>
+    <text x="18" y="176" class="m" font-size="12" fill="#00f0ff">&gt; git push</text>
+  </g>
+
+  <!-- 02 -->
+  <g transform="translate(324 66)">
+    <use href="#box"/>
+    <polygon class="s2" points="0,0 250,0 250,170 228,192 0,192" fill="#fcee0a" opacity="0" fill-opacity=".08"/>
+    <text x="8" y="12" class="m" font-size="11" fill="#07070c">ETAPA 02</text>
+    <text x="18" y="62" class="t" font-size="26" fill="#ff003c">SCAN</text>
+    <text x="18" y="100" class="m" font-size="14" fill="#e8e8f0">Segredos, código</text>
+    <text x="18" y="120" class="m" font-size="14" fill="#e8e8f0">ofuscado, binários</text>
+    <text x="18" y="140" class="m" font-size="14" fill="#e8e8f0">e conexões externas</text>
+    <text x="18" y="176" class="m" font-size="12" fill="#00f0ff">&gt; sec.review --strict</text>
+  </g>
+
+  <!-- 03 -->
+  <g transform="translate(624 66)">
+    <use href="#box"/>
+    <polygon class="s3" points="0,0 250,0 250,170 228,192 0,192" fill="#fcee0a" opacity="0" fill-opacity=".08"/>
+    <text x="8" y="12" class="m" font-size="11" fill="#07070c">ETAPA 03</text>
+    <text x="18" y="62" class="t" font-size="26" fill="#00f0ff">TESTE</text>
+    <text x="18" y="100" class="m" font-size="14" fill="#e8e8f0">O recurso roda no</text>
+    <text x="18" y="120" class="m" font-size="14" fill="#e8e8f0">ambiente isolado</text>
+    <text x="18" y="140" class="m" font-size="14" fill="#e8e8f0">de QA</text>
+    <text x="18" y="176" class="m" font-size="12" fill="#00f0ff">&gt; sandbox.run</text>
+  </g>
+
+  <!-- 04 -->
+  <g transform="translate(924 66)">
+    <use href="#box"/>
+    <polygon class="s4" points="0,0 250,0 250,170 228,192 0,192" fill="#fcee0a" opacity="0" fill-opacity=".08"/>
+    <text x="8" y="12" class="m" font-size="11" fill="#07070c">ETAPA 04</text>
+    <text x="18" y="62" class="t" font-size="26" fill="#39ff88">RETORNO</text>
+    <text x="18" y="100" class="m" font-size="14" fill="#e8e8f0">Aprovado ou pedido</text>
+    <text x="18" y="120" class="m" font-size="14" fill="#e8e8f0">de ajustes no</text>
+    <text x="18" y="140" class="m" font-size="14" fill="#e8e8f0">próprio PR</text>
+    <text x="18" y="176" class="m" font-size="12" fill="#00f0ff">&gt; merge --approved</text>
+  </g>
+
+  <rect width="1200" height="300" fill="url(#scan)"/>
+</svg>

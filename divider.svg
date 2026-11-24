@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 24" width="1200" height="24">
+  <style>
+    .run{animation:r 3s infinite linear}
+    @keyframes r{from{transform:translateX(-120px)}to{transform:translateX(1200px)}}
+  </style>
+  <rect width="1200" height="24" fill="#07070c"/>
+  <line x1="0" y1="12" x2="1200" y2="12" stroke="#fcee0a" stroke-width="2" stroke-opacity=".5"/>
+  <polygon points="0,6 140,6 132,18 0,18" fill="#fcee0a"/>
+  <polygon points="1200,6 1060,6 1068,18 1200,18" fill="#fcee0a"/>
+  <g fill="#ff003c"><rect x="160" y="9" width="10" height="6"/><rect x="176" y="9" width="4" height="6"/></g>
+  <g fill="#00f0ff"><rect x="1030" y="9" width="4" height="6"/><rect x="1040" y="9" width="10" height="6"/></g>
+  <rect class="run" x="0" y="10" width="120" height="4" fill="#00f0ff"/>
+</svg>

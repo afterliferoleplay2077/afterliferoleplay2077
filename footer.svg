@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 110" width="1200" height="110">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".3"/>
+    </pattern>
+  </defs>
+  <style>
+    .t{font-family:'Arial Black','Segoe UI Black',Impact,sans-serif;font-weight:900;letter-spacing:8px}
+    .m{font-family:Consolas,'Courier New',monospace;font-weight:700}
+    .blink{animation:bl 1s infinite steps(1)}
+    @keyframes bl{50%{opacity:0}}
+  </style>
+  <rect width="1200" height="110" fill="#07070c"/>
+  <polygon points="0,0 1200,0 1200,8 420,8 400,24 0,24" fill="#fcee0a"/>
+  <text x="18" y="18" class="m" font-size="12" fill="#07070c">FIM DA TRANSMISSÃO</text>
+  <text x="600" y="72" class="t" font-size="30" fill="#fcee0a" text-anchor="middle">AFTERLIFE RP</text>
+  <text x="600" y="96" class="m" font-size="13" fill="#00f0ff" text-anchor="middle">// conexão encerrada ─ até a próxima conexão<tspan class="blink" fill="#fcee0a">_</tspan></text>
+  <rect width="1200" height="110" fill="url(#scan)"/>
+</svg>

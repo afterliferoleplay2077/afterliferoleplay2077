@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 380" width="1200" height="380">
+  <defs>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#000" opacity=".35"/>
+    </pattern>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#00f0ff" stroke-opacity=".07"/>
+    </pattern>
+    <linearGradient id="fade" x1="0" x2="1">
+      <stop offset="0" stop-color="#fcee0a" stop-opacity="0"/>
+      <stop offset=".5" stop-color="#fcee0a"/>
+      <stop offset="1" stop-color="#fcee0a" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .t{font-family:'Arial Black','Segoe UI Black',Impact,'Helvetica Neue',sans-serif;font-weight:900;letter-spacing:6px}
+    .m{font-family:Consolas,'Courier New',monospace;font-weight:700}
+    .gc{animation:gc 4s infinite steps(1)}
+    .gr{animation:gr 4s infinite steps(1)}
+    .slice{animation:sl 4s infinite steps(1)}
+    @keyframes gc{0%,84%,100%{transform:translate(0,0);opacity:0}85%{transform:translate(-9px,3px);opacity:.95}87%{transform:translate(7px,-2px);opacity:.9}89%{transform:translate(-4px,0);opacity:.85}91%{opacity:0}96%{transform:translate(3px,1px);opacity:.7}97%{opacity:0}}
+    @keyframes gr{0%,84%,100%{transform:translate(0,0);opacity:0}85%{transform:translate(8px,-3px);opacity:.9}87%{transform:translate(-6px,2px);opacity:.9}89%{transform:translate(5px,1px);opacity:.8}91%{opacity:0}96%{transform:translate(-3px,-1px);opacity:.7}97%{opacity:0}}
+    @keyframes sl{0%,85%,100%{opacity:0}86%{opacity:1;transform:translateX(-30px)}88%{opacity:1;transform:translateX(40px)}90%{opacity:0}}
+    .blink{animation:bl 1s infinite steps(1)}
+    @keyframes bl{50%{opacity:0}}
+    .pulse{animation:pu 1.6s infinite ease-in-out}
+    @keyframes pu{50%{opacity:.25}}
+    .sweep{animation:sw 5s infinite linear}
+    @keyframes sw{0%{transform:translateY(-40px)}100%{transform:translateY(420px)}}
+  </style>
+
+  <rect width="1200" height="380" fill="#07070c"/>
+  <rect width="1200" height="380" fill="url(#grid)"/>
+
+  <!-- top bar -->
+  <polygon points="0,0 470,0 440,30 0,30" fill="#fcee0a"/>
+  <text x="18" y="21" class="m" font-size="14" fill="#07070c">AFTL // AFTERLIFE ROLEPLAY // NET.NODE BR-01</text>
+  <text x="1182" y="21" class="m" font-size="13" fill="#00f0ff" text-anchor="end" opacity=".8">SYS.TIME 20:77 ▮ UPLINK STABLE</text>
+  <line x1="0" y1="31" x2="1200" y2="31" stroke="#fcee0a" stroke-opacity=".35"/>
+
+  <!-- side markers -->
+  <g fill="#fcee0a">
+    <rect x="40" y="88" width="6" height="150"/>
+    <rect x="52" y="88" width="2" height="150" opacity=".5"/>
+  </g>
+  <text x="40" y="76" class="m" font-size="13" fill="#ff003c">[ ACESSO RESTRITO ]</text>
+
+  <!-- title with glitch -->
+  <g transform="translate(78 200) skewX(-8)">
+    <text class="t gc" font-size="118" fill="#00f0ff">AFTERLIFE</text>
+    <text class="t gr" font-size="118" fill="#ff003c">AFTERLIFE</text>
+    <text class="t" font-size="118" fill="#fcee0a">AFTERLIFE</text>
+    <rect class="slice" x="0" y="-62" width="760" height="12" fill="#07070c"/>
+    <rect class="slice" x="0" y="-30" width="760" height="6" fill="#00f0ff" opacity=".8"/>
+  </g>
+
+  <!-- subtitle -->
+  <polygon points="78,228 640,228 625,262 78,262" fill="#00f0ff"/>
+  <text x="92" y="252" class="m" font-size="20" fill="#07070c" letter-spacing="3">ROLEPLAY ─ DIVISÃO DE QA &amp; CODE REVIEW</text>
+  <text x="78" y="296" class="m" font-size="16" fill="#e8e8f0" opacity=".85">&gt; nada entra no servidor sem passar pelo scanner<tspan class="blink" fill="#fcee0a">█</tspan></text>
+
+  <!-- HUD panel -->
+  <g transform="translate(850 70)">
+    <polygon points="0,0 300,0 300,190 280,210 0,210" fill="none" stroke="#fcee0a" stroke-width="2"/>
+    <polygon points="0,0 90,0 80,14 0,14" fill="#fcee0a"/>
+    <text x="6" y="11" class="m" font-size="10" fill="#07070c">STATUS.HUD</text>
+    <g class="m" font-size="15">
+      <text x="18" y="48" fill="#8a8aa0">NODE</text><text x="282" y="48" fill="#e8e8f0" text-anchor="end">QA-ENV</text>
+      <text x="18" y="80" fill="#8a8aa0">STATUS</text><text x="282" y="80" fill="#39ff88" text-anchor="end">ONLINE</text>
+      <circle class="pulse" cx="200" cy="75" r="5" fill="#39ff88"/>
+      <text x="18" y="112" fill="#8a8aa0">SEC.SCAN</text><text x="282" y="112" fill="#fcee0a" text-anchor="end">ATIVO</text>
+      <text x="18" y="144" fill="#8a8aa0">INTRUSÃO</text><text x="282" y="144" fill="#ff003c" text-anchor="end">BLOQUEADA</text>
+    </g>
+    <g fill="#00f0ff" opacity=".7">
+      <rect x="18" y="168" width="4" height="22"/><rect x="26" y="168" width="2" height="22"/><rect x="32" y="168" width="6" height="22"/>
+      <rect x="42" y="168" width="2" height="22"/><rect x="48" y="168" width="3" height="22"/><rect x="56" y="168" width="7" height="22"/>
+      <rect x="67" y="168" width="2" height="22"/><rect x="73" y="168" width="4" height="22"/><rect x="81" y="168" width="2" height="22"/>
+      <rect x="87" y="168" width="5" height="22"/><rect x="96" y="168" width="2" height="22"/><rect x="102" y="168" width="3" height="22"/>
+    </g>
+    <text x="282" y="186" class="m" font-size="11" fill="#8a8aa0" text-anchor="end">ID 0x2077-AFTL</text>
+  </g>
+
+  <!-- bottom stripe -->
+  <polygon points="0,340 760,340 790,312 1200,312 1200,380 0,380" fill="#fcee0a"/>
+  <g fill="#07070c">
+    <rect x="1080" y="326" width="6" height="40"/><rect x="1092" y="326" width="2" height="40"/><rect x="1098" y="326" width="10" height="40"/>
+    <rect x="1112" y="326" width="3" height="40"/><rect x="1120" y="326" width="6" height="40"/><rect x="1130" y="326" width="2" height="40"/>
+    <rect x="1136" y="326" width="8" height="40"/><rect x="1148" y="326" width="3" height="40"/><rect x="1156" y="326" width="6" height="40"/>
+  </g>
+  <text x="20" y="366" class="m" font-size="15" fill="#07070c" letter-spacing="2">// QA.PROTOCOL v1.0 ─ ENTREGAS • REVISÃO • TESTE • DEPLOY</text>
+  <text x="815" y="340" class="m" font-size="13" fill="#07070c">CLASSIFICAÇÃO: INTERNA</text>
+
+  <!-- fx -->
+  <rect class="sweep" x="0" y="0" width="1200" height="3" fill="url(#fade)" opacity=".35"/>
+  <rect width="1200" height="380" fill="url(#scan)"/>
+</svg>

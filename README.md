@@ -1,36 +1,53 @@
-<div align="center">
+<p align="center">
+  <img src="./header.svg" width="100%" alt="AFTERLIFE · Roleplay · Divisão de QA &amp; Code Review"/>
+</p>
 
-# Afterlife Roleplay
+<img src="./divider.svg" width="100%" alt=""/>
 
-**Servidor de roleplay · conta oficial de QA e revisão de código**
+### `▍01` // O QUE É ESTA CONTA
 
-</div>
+> **Conta oficial de QA da Afterlife RP.**
+> Aqui recebemos, revisamos e testamos o código dos devs parceiros antes de qualquer coisa entrar no servidor.
+> Toda entrega fica registrada em Pull Request, com histórico, comentários e resultado da revisão. **Transparência total.**
 
----
+<img src="./divider.svg" width="100%" alt=""/>
 
-### O que é esta conta
+### `▍02` // PROTOCOLO
 
-Aqui a equipe da **Afterlife RP** recebe, revisa e testa o código feito por devs parceiros antes de qualquer coisa entrar no servidor.
+<p align="center">
+  <img src="./process.svg" width="100%" alt="01 Entrega → 02 Scan de segurança → 03 Teste em ambiente isolado → 04 Retorno no PR"/>
+</p>
 
-A ideia é ser **transparente**: toda entrega fica registrada em Pull Request, com histórico, comentários e o resultado da revisão.
+<img src="./divider.svg" width="100%" alt=""/>
 
-### Como funciona
+### `▍03` // REGRAS DE ACESSO
 
-| Etapa | O que acontece |
-| --- | --- |
-| 1. Entrega | O dev abre um Pull Request no repositório de QA |
-| 2. Revisão de segurança | Checamos segredos expostos, código ofuscado, binários e chamadas externas |
-| 3. Teste | O recurso roda no ambiente isolado de QA |
-| 4. Retorno | Aprovação ou pedido de ajustes no próprio PR |
+```diff
++ [OK]   Código legível, com dependências e versões declaradas
++ [OK]   Configs com valores de exemplo (config.example)
++ [OK]   SQL de criação das tabelas junto com a entrega
++ [OK]   Entregas grandes divididas em capítulos: um PR por capítulo
 
-### Para devs parceiros
+- [NEGADO]  Tokens, senhas, webhooks ou connection strings no código
+- [NEGADO]  Arquivos ofuscados ou criptografados sem combinar antes
+- [NEGADO]  Binários e scripts (.exe .dll .bat .ps1) sem justificativa
+- [NEGADO]  Chamadas externas escondidas (HTTP, downloads, webhooks)
+```
 
-- Leia o README do repositório de QA antes da primeira entrega
-- Nada de credenciais no código: use arquivos de exemplo
-- Entregas grandes podem ser divididas em capítulos, um PR por capítulo
+<img src="./divider.svg" width="100%" alt=""/>
 
----
+### `▍04` // TERMINAL
 
-<div align="center">
-<sub>Afterlife RP · QA</sub>
-</div>
+```console
+afterlife@qa:~$ status --devs
+  ▸ devs parceiros ......... conectados via Pull Request
+  ▸ ambiente de QA ......... isolado
+  ▸ revisão de segurança ... obrigatória
+  ▸ deploy no servidor ..... só após aprovação
+
+afterlife@qa:~$ █
+```
+
+<p align="center">
+  <img src="./footer.svg" width="100%" alt="Fim da transmissão · Afterlife RP"/>
+</p>
