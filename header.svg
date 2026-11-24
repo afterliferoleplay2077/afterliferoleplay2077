@@ -47,11 +47,11 @@
 
   <!-- title with glitch -->
   <g transform="translate(78 200) skewX(-8)">
-    <text class="t gc" font-size="118" fill="#00f0ff">AFTERLIFE</text>
-    <text class="t gr" font-size="118" fill="#ff003c">AFTERLIFE</text>
-    <text class="t" font-size="118" fill="#fcee0a">AFTERLIFE</text>
-    <rect class="slice" x="0" y="-62" width="760" height="12" fill="#07070c"/>
-    <rect class="slice" x="0" y="-30" width="760" height="6" fill="#00f0ff" opacity=".8"/>
+    <text class="t gc" font-size="112" textLength="715" lengthAdjust="spacingAndGlyphs" fill="#00f0ff">AFTERLIFE</text>
+    <text class="t gr" font-size="112" textLength="715" lengthAdjust="spacingAndGlyphs" fill="#ff003c">AFTERLIFE</text>
+    <text class="t" font-size="112" textLength="715" lengthAdjust="spacingAndGlyphs" fill="#fcee0a">AFTERLIFE</text>
+    <rect class="slice" x="0" y="-62" width="720" height="12" fill="#07070c"/>
+    <rect class="slice" x="0" y="-30" width="720" height="6" fill="#00f0ff" opacity=".8"/>
   </g>
 
   <!-- subtitle -->
